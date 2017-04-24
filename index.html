@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Election Results Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/style/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h2>U.S. Third Parties Return</h2>
+    <p>Third-party candidacies have been climbing steadily in recent presidential elections, particularly in western states.</p>
+  </div>
+  <div class="year-select">
+    <select class="form-control" id="electionYear" name="electionYear">
+      <option value="2004" selected>2004 Election Results</option>
+      <option value="2008">2008 Election Results</option>
+      <option value="2012" >2012 Election Results</option>
+    </select>
+  </div>
+  <div class="map-container">
+    <div id="pop-up"></div>
+    <svg width="960" height="600" id="statesvg"></svg>
+  </div>
+  <div class="form-container">
+    <form id="form">
+      <div class="form-group">
+        <label for="name">Candidate Name</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter candidate name">
+      </div>
+      <div class="form-group">
+        <label for="votetotal">Vote Total</label>
+        <input class="form-control" id="votetotal" name="votetotal" placeholder="Vote total" type="number">
+      </div>
+      <div class="form-group" >
+        <label for="state">State</label>
+        <select class="form-control" id="state" name="state">
+          <option value="" disabled selected>Select state</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <pre class="debug hidden">
+      Success! 
+      Request Method: POST
+      Status Code: 200 
+      Serialized Request: <br>
+      <b></b>
+    </pre>
+  </div>
+<script src="/bundle.js"></script>
+</body>
+</html>
