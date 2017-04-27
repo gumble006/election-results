@@ -58,7 +58,6 @@ const colorScale = scaleQuantile()
   .domain([0,4])
   .range(["#fee391","#fec44f","#fe9929","#ec7014"]);
 
-
 $(document).ready(() => {
 
   const statesOptions = statesList.sort().map(item => `<option>${item}</option>`);

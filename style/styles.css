@@ -1,11 +1,25 @@
+@font-face { 
+  font-family: 'Open Sans'; 
+  src: url('OpenSans-Regular-webfont.woff'); 
+} 
+
 body {
   background-color: whitesmoke;
+  font-family: 'Open Sans'
 }
 
 .header {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.header h2{
   text-align: center;
 }
 
+.map-container {
+  margin-top: 25px;
+}
 #statesvg {
   display: block;
   margin: 0 auto;
@@ -81,4 +95,13 @@ pre {
 }
 #pop-up tr td:nth-child(2){
   text-align:center;
+}
+
+
+
+.legendContainer {
+  fill: white;
+  opacity: 0.9;
+  stroke: lightgray;
+  stroke-width: 1;
 }
