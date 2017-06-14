@@ -19,6 +19,7 @@ body {
 
 .map-container {
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 #statesvg {
   display: block;

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { select, scaleQuantile } from 'd3';
 
-import uStates from '../uStates';
+import uStates from './uStates';
 
 import results2004 from '../data/results_2004.json';
 import results2008 from '../data/results_2008.json';

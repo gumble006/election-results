@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Election Results Dashboard</title>
+  <title>US National Election Results - 2004 - 2012</title>
   <link rel="stylesheet" type="text/css" href="/style/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/style/styles.css">
 </head>
@@ -21,32 +21,6 @@
   <div class="map-container">
     <div id="pop-up"></div>
     <svg width="960" height="600" id="statesvg"></svg>
-  </div>
-  <div class="form-container">
-    <form id="form">
-      <div class="form-group">
-        <label for="name">Candidate Name</label>
-        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter candidate name">
-      </div>
-      <div class="form-group">
-        <label for="votetotal">Vote Total</label>
-        <input class="form-control" id="votetotal" name="votetotal" placeholder="Vote total" type="number">
-      </div>
-      <div class="form-group" >
-        <label for="state">State</label>
-        <select class="form-control" id="state" name="state">
-          <option value="" disabled selected>Select state</option>
-        </select>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-    <pre class="debug hidden">
-      Success! 
-      Request Method: POST
-      Status Code: 200 
-      Serialized Request: <br>
-      <b></b>
-    </pre>
   </div>
 <script src="/bundle.js"></script>
 </body>
